@@ -297,6 +297,14 @@ class TitleState extends MusicBeatState
 		ngSpr.screenCenter(X);
 		ngSpr.antialiasing = ClientPrefs.data.antialiasing;
 
+		mishaSpr = new FlxSprite(0, FlxG.height * 0.52).loadGraphic(Paths.image('misha_logo'));
+		add(mishaSpr);
+		mishaSpr.visible = false;
+		mishaSpr.setGraphicSize(Std.int(ngSpr.width * 0.8));
+		mishaSpr.updateHitbox();
+		mishaSpr.screenCenter(X);
+		mishaSpr.antialiasing = ClientPrefs.data.antialiasing;
+
 		if (initialized)
 			skipIntro();
 		else
@@ -532,17 +540,17 @@ class TitleState extends MusicBeatState
 					FlxG.sound.playMusic(Paths.music('freakyMenu'), 0);
 					FlxG.sound.music.fadeIn(4, 0, 0.7);
 				case 2:
-					createCoolText(['Psych Engine by'], 40);
+					createCoolText(['Mod made by'], 40);
 				case 4:
-					addMoreText('Shadow Mario', 40);
-					addMoreText('Riveren', 40);
+					addMoreText('Misha_FNF', 40);
+                                        mishaSpr.visible = true;
 				case 5:
 					deleteCoolText();
 				case 6:
-					createCoolText(['Not associated', 'with'], -40);
+					createCoolText(['Made', 'on'], -40);
 				case 8:
-					addMoreText('newgrounds', -40);
-					ngSpr.visible = true;
+					addMoreText('Psych Engine', -40);
+					ngSpr.visible = false;
 				case 9:
 					deleteCoolText();
 					ngSpr.visible = false;
@@ -553,11 +561,11 @@ class TitleState extends MusicBeatState
 				case 13:
 					deleteCoolText();
 				case 14:
-					addMoreText('Friday');
+					addMoreText('Dave');
 				case 15:
-					addMoreText('Night');
+					addMoreText(' - ');
 				case 16:
-					addMoreText('Funkin'); // credTextShit.text += '\nFunkin';
+					addMoreText('Puzzle Edition'); // credTextShit.text += '\nFunkin';
 
 				case 17:
 					skipIntro();
@@ -590,6 +598,7 @@ class TitleState extends MusicBeatState
 
 					default: //Go back to normal ugly ass boring GF
 						remove(ngSpr);
+						remove(mishaSpr);
 						remove(credGroup);
 						FlxG.camera.flash(FlxColor.WHITE, 2);
 						skippedIntro = true;
@@ -606,6 +615,7 @@ class TitleState extends MusicBeatState
 					new FlxTimer().start(3.2, function(tmr:FlxTimer)
 					{
 						remove(ngSpr);
+						remove(mishaSpr);
 						remove(credGroup);
 						FlxG.camera.flash(FlxColor.WHITE, 0.6);
 						transitioning = false;
@@ -614,10 +624,11 @@ class TitleState extends MusicBeatState
 				else
 				{
 					remove(ngSpr);
+					remove(mishaSpr);
 					remove(credGroup);
 					FlxG.camera.flash(FlxColor.WHITE, 3);
 					sound.onComplete = function() {
-						FlxG.sound.playMusic(Paths.music('freakyMenu'), 0);
+						FlxG.sound.playMusic(PngSpr.visible = true; pngSpr.visible = true;paths.music('freakyMenu'), 0);
 						FlxG.sound.music.fadeIn(4, 0, 0.7);
 						transitioning = false;
 					};
@@ -627,6 +638,7 @@ class TitleState extends MusicBeatState
 			else #end //Default! Edit this one!!
 			{
 				remove(ngSpr);
+				remove(mishaSpr);
 				remove(credGroup);
 				FlxG.camera.flash(FlxColor.WHITE, 4);
 
