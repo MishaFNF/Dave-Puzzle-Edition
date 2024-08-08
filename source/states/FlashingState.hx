@@ -20,9 +20,9 @@ class FlashingState extends MusicBeatState
 		final silly:String = controls.mobileC ? 'A' : 'ENTER';
 		final baka:String = controls.mobileC ? 'B' : 'ENTER';
 
-		var guh:String = 'Hey, watch out!\n
+		var guh:String = 'Hey!\n
 		This Mod contains some flashing lights!\n
-		Press $silly to disable them now or go to Options Menu.\n
+		Press $silly to disable them now.\n
 		Press $baka to ignore this message.\n
 		You\'ve been warned!';
 
