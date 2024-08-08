@@ -38,40 +38,8 @@ class CreditsState extends MusicBeatState
 		#end
 
 		var defaultList:Array<Array<String>> = [ //Name - Icon name - Description - Link - BG Color
-			['Mobile Porting Team'],
-			['mcagabe19',			'lily',             'Head Porter of Psych Engine Mobile',                       'https://youtube.com/@mcagabe19',		'FFE7C0'],
-			['Karim Akra',			'karim',			'Second Porter of Psych Engine Mobile',						'https://youtube.com/@Karim0690',		'FFB4F0'],
-			['Moxie',			'hoovy',			'Helper of Psych Engine Mobile',						'https://twitter.com/moxie_specalist',       'F592C4'],
-			[''],
-			["Psych Engine Team"],
-			["Shadow Mario",		"shadowmario",		"Main Programmer and Head of Psych Engine",					"https://ko-fi.com/shadowmario",		"444444"],
-			["Riveren",				"riveren",			"Main Artist/Animator of Psych Engine",						"https://twitter.com/riverennn",		"14967B"],
-			[""],
-			["Former Engine Members"],
-			["bb-panzu",			"bb",				"Ex-Programmer of Psych Engine",							"https://twitter.com/bbsub3",			"3E813A"],
-			[""],
-			["Engine Contributors"],
-			["crowplexus",			"crowplexus",		"Input System v3, Major Help and Other PRs",				"https://twitter.com/crowplexus",		"A1A1A1"],
-			["Kamizeta",			"face",				"Creator of Pessy, Psych Engine's mascot.",					"https://twitter.com/LittleCewwy",		"A1A1A1"],
-			["MaxNeton",			"face",				"Loading Screen Easter Egg Artist/Animator.",				"https://twitter.com/MaxNeton",			"A1A1A1"],
-			["Keoiki",				"keoiki",			"Note Splash Animations and Latin Alphabet",				"https://twitter.com/Keoiki_",			"D2D2D2"],
-			["SqirraRNG",			"sqirra",			"Crash Handler and Base code for\nChart Editor's Waveform",	"https://twitter.com/gedehari",			"E1843A"],
-			["EliteMasterEric",		"mastereric",		"Runtime Shaders support and Other PRs",					"https://twitter.com/EliteMasterEric",	"FFBD40"],
-			["MAJigsaw77",			"majigsaw",			".MP4 Video Loader Library (hxvlc)",						"https://twitter.com/MAJigsaw77",		"A1A1A1"],
-			["Tahir Toprak Karabekiroglu",	"tahir",    "Implementing & Maintaining SScript and Other PRs",			"https://twitter.com/TahirKarabekir",	"A04397"],
-			["iFlicky",				"flicky",			"Composer of Psync and Tea Time\nMade the Dialogue Sounds",	"https://twitter.com/flicky_i",			"9E29CF"],
-			["KadeDev",				"kade",				"Fixed some issues on Chart Editor and Other PRs",			"https://twitter.com/kade0912",			"64A250"],
-			["superpowers04",		"superpowers04",	"LUA JIT Fork",												"https://twitter.com/superpowers04",	"B957ED"],
-			["CheemsAndFriends",	"face",				"Creator of FlxAnimate",									"https://twitter.com/CheemsnFriendos",	"A1A1A1"],
-			[""],
-			["Funkin' Crew"],
-			["ninjamuffin99",		"ninjamuffin99",	"Programmer of Friday Night Funkin'",						"https://twitter.com/ninja_muffin99",	"CF2D2D"],
-			["PhantomArcade",		"phantomarcade",	"Animator of Friday Night Funkin'",							"https://twitter.com/PhantomArcade3K",	"FADC45"],
-			["evilsk8r",			"evilsk8r",			"Artist of Friday Night Funkin'",							"https://twitter.com/evilsk8r",			"5ABD4B"],
-			["kawaisprite",			"kawaisprite",		"Composer of Friday Night Funkin'",							"https://twitter.com/kawaisprite",		"378FC7"],
-			[""],
-			["Psych Engine Discord"],
-			["Join the Psych Ward!", "discord", "", "https://discord.gg/2ka77eMXDv", "5165F6"]
+			['Dave - P.E Credits'],
+	        	['Misha',			'misha',			'Made everything, yay',						'https://youtube.com/@misha_fnf?si=33eba9vEEkGhgXb5',       '5B63FD']
 		];
 		
 		for(i in defaultList)
